@@ -36,7 +36,7 @@ def secret(provider, value=None):
 
 
 def login(provider, credentials):
-    context = ssl.create_default_context(cafile='/etc/ssl/cert.pem')
+    context = ssl.create_default_context(cafile='/etc/ssl/cert.pem' if Path('/etc/ssl/cert.pem').is_file() else None)
     client = imaplib.IMAP4_SSL(HOSTS[provider], 993, ssl_context=context, timeout=35)
     try:
         client.login(credentials['address'], credentials['password'])

@@ -4,6 +4,8 @@
 
 ### Personal planning. Local intelligence. Resources on demand.
 
+[![Tests](https://github.com/x7inferno7x/rhythm/actions/workflows/ci.yml/badge.svg)](https://github.com/x7inferno7x/rhythm/actions/workflows/ci.yml)
+
 Локальный AI-планировщик для macOS, который собирает календарь, задачи и новые письма в понятный план дня — и освобождает ресурсы после ответа.
 
 **Swift · Python · JavaScript · n8n · Ollama · SQLite · macOS Keychain**
